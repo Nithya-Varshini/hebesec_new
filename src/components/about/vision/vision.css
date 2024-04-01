@@ -1,0 +1,11 @@
+.vision_box {
+    border-radius: 15px;
+    margin:50px;
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+    box-shadow: black 0px 50px 100px -20px, black 0px 30px 60px -30px;}
+
+.vision_head{
+    font-size: 2rem;
+}
