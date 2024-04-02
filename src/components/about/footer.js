@@ -116,7 +116,8 @@ export default function Footer() {
                   width: "90%",
                 }}
               >
-                <strong>Tamil Nadu, India<br></br></strong>Chennai<br></br>Coimbatore<br></br>Karaikudi
+                <strong>Malayaia &  Indonesia
+<br></br></strong>Kuala Lumpur <br></br>Semarang<br></br><br></br>
               </div>
             </div>
             <div className="seg">
@@ -131,7 +132,8 @@ export default function Footer() {
                   width: "90%",
                 }}
               >
-                +91 9566022629</div>
+                +60 12-675 7536 
+</div>
             </div>
             <div className="seg">
               <img src={glob} className="seg1" />

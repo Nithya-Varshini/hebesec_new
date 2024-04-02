@@ -3,3 +3,20 @@
     text-align: center;
     color: white;
 }
+
+.valuesbox {
+    border-radius: 15px;
+    margin:50px;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(242, 168, 29, 0.4) -5px 5px, rgba(242, 168, 29, 0.3) -10px 10px, rgba(242, 168, 29, 0.2) -15px 15px, rgba(242, 168, 29, 0.1) -20px 20px, rgba(242, 168, 29, 0.05) -25px 25px; margin: 50px 100px !important;
+    height: 70%;
+    /* width: 100%; */
+    border-radius: 16px;
+    background-color: #20308C;
+}
+
+.valueshead{
+    font-size: 2rem;
+}

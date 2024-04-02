@@ -11,11 +11,9 @@ export default function Services() {
         <>
         <Container fluid className="about_header">
         <Row>
-        <Col lg={2}></Col>
-        <Col lg={8}>
+        <Col lg={12}>
         <h1 className="big_font about_content">Our Services</h1>
         </Col>
-        <Col lg={2}></Col>
         </Row>
         </Container>
         <AllServices />

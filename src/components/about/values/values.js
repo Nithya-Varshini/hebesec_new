@@ -33,15 +33,15 @@ export default function Values() {
       
     return(
         <>
-        <Container fluid style={{backgroundColor:"#565659"}}> 
+        <Container fluid> 
             <Row>
                 <Col lg={12}>
                     <div className="big_font values_head">Core Values</div>
                 </Col>
                 {visionData.map((vision, index) => (
-        <Col lg={4} key={index}>
-          <div className="vision_box">
-            <div className="big_font vision_head">{vision.title}</div>
+        <Col lg={3} key={index}>
+          <div className="valuesbox">
+            <div className="big_font valueshead">{vision.title}</div>
             <div className="small_font">{vision.description}</div>
           </div>
         </Col>

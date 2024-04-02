@@ -32,3 +32,20 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.values_head{
+    margin: 30px 0px;
+    font-size: 2rem;
+
+}
+.values_box {
+    border-radius: 15px;
+    padding: 50px;
+    width: 70%;
+    height: 80%;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(242, 168, 29, 0.4) -5px 5px, rgba(242, 168, 29, 0.3) -10px 10px, rgba(242, 168, 29, 0.2) -15px 15px, rgba(242, 168, 29, 0.1) -20px 20px, rgba(242, 168, 29, 0.05) -25px 25px; margin: 50px 100px !important;
+    border-radius: 16px;
+    background-color: #20308C;
+}

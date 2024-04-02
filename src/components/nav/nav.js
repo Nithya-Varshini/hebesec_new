@@ -1,19 +1,13 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import { Outlet, Link } from "react-router-dom";
-import logo from "./about/images/whit-elogo.png";
-import newImage from "./about/images/new1.png";
+import { Link } from "react-router-dom";
+
+import { Outlet } from "react-router-dom";
+import logo from "../about/images/whit-elogo.png";
+import newImage from "../about/images/new1.png";
 import './nav.css';
 import { useEffect, useState } from 'react';
 
-function OffcanvasExample() {
-
-    const [logoSrc, setLogoSrc] = useState(logo);
+function Nav() {
+  const [logoSrc, setLogoSrc] = useState(logo);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,47 +45,36 @@ function OffcanvasExample() {
       }
     }
   });
+
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary fixed-top">
-        <Container fluid>
-          <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
-          <Navbar.Offcanvas
-            id="offcanvasNavbar-expand-lg"
-            aria-labelledby="offcanvasNavbarLabel-expand-lg"
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                Offcanvas
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
-                <NavDropdown
-                  title="Dropdown"
-                  id="offcanvasNavbarDropdown-expand-lg"
-                >
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </Container>
-      </Navbar>
+      <nav className="navbar navbar-dark navbar-expand-sm fixed-top" style={{ height: "70px" }}>
+        <div className="container">
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <a className="navbar-brand ms-auto" href="/"><img
+            src={logoSrc}
+            width="auto"
+            height="60"
+            margin-top="3"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          /></a>
+          <div className="collapse navbar-collapse" id="Navbar">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/about">ABOUT US</Link></li>
+              <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/services">SERVICES</Link></li>
+              <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/programs">R&D CENTER</Link></li>
+              <li className="nav-item mx-2" style={{ fontSize: "20px" }}><Link className="wow" to="/resume">CONTACT US</Link></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <Outlet />
     </>
   );
 }
 
-export default OffcanvasExample;
+export default Nav;

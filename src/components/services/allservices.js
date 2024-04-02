@@ -86,7 +86,7 @@ export default function AllServices() {
     return(
         <>
         <br></br>
-        <Container>
+        <Container fluid>
             <Row>
             <Col lg={12}>
                     <div className="big_font values_head">CYBER DEFENCE
@@ -95,7 +95,7 @@ SERVICE
                 </Col>
                 {visionData.map((vision, index) => (
         <Col lg={4} key={index}>
-          <div className="vision_box">
+          <div className="values_box">
             <div className="big_font vision_head">{vision.title}</div>
             <div className="small_font">{vision.description}</div>
             <br></br>
@@ -105,7 +105,7 @@ SERVICE
       ))}
             </Row>
         </Container>
-        <Container>
+        <Container fluid>
             <Row>
             <Col lg={12}>
                     <div className="big_font values_head">CYBER SECURITY ASSESSMENT 
@@ -114,7 +114,7 @@ SERVICES
                 </Col>
                 {visionData1.map((vision, index) => (
         <Col lg={4} key={index}>
-          <div className="vision_box">
+          <div className="values_box">
             <div className="big_font vision_head">{vision.title}</div>
             <div className="small_font">{vision.description}</div>
             <br></br>
@@ -124,7 +124,7 @@ SERVICES
       ))}
             </Row>
         </Container>
-        <Container>
+        <Container fluid>
             <Row>
             <Col lg={12}>
                     <div className="big_font values_head">INFORMATION SECURITY PRODUCTS & SERVICES
@@ -133,7 +133,7 @@ SERVICES
                 </Col>
                 {visionData2.map((vision, index) => (
         <Col lg={4} key={index}>
-          <div className="vision_box">
+          <div className="values_box">
             <div className="big_font vision_head">{vision.title}</div>
             <div className="small_font">{vision.description}</div>
             <br></br>

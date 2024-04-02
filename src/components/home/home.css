@@ -1,0 +1,34 @@
+.home_head{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/head.jpg);
+        height: 100vh;
+        max-width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;   
+        color: white;
+        display: flex;
+        align-items: center;
+      
+}
+
+
+.home_content{
+    padding:0px 200px;
+    font-size:6rem;
+    
+}
+.home_content1{
+    padding:0px 200px;
+    font-size:2rem;
+    color: white;
+}
+
+.test_bg{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/head.jpg);
+        
+        max-width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;   
+        color: white;
+}
