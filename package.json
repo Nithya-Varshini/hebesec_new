@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fontsource/bebas-neue": "^5.0.19",
+    "@fontsource/eb-garamond": "^5.0.17",
     "@fontsource/lato": "^5.0.20",
     "@fontsource/londrina-solid": "^5.0.18",
     "@fontsource/rubik": "^5.0.19",

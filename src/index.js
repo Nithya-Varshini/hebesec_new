@@ -12,6 +12,8 @@ import "@fontsource/rubik/400.css"; // Specify weight
 import "@fontsource/rubik/400-italic.css"; // Specify weight and style
 import "@fontsource/bebas-neue"; // Defaults to weight 400
 import "@fontsource/bebas-neue/400.css"; // Specify weight
+import "@fontsource/eb-garamond"; // Defaults to weight 400
+import "@fontsource/eb-garamond/400.css"; // Specify weight
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
